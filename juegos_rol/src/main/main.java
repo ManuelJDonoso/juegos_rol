@@ -13,6 +13,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
@@ -29,9 +30,9 @@ public class main extends Application {
             FXMLLoader loader = new FXMLLoader();
 
             // cargar la ruta del fxml (diseño)
-           loader.setLocation(main.class.getResource("/vista/pruebas.fxml"));
+           loader.setLocation(main.class.getResource("/vista/V_Mascarada_V20_1.fxml"));
             // Cargarlo en una ventana
-            AnchorPane ventanappal = (AnchorPane) loader.load();
+            VBox ventanappal = (VBox) loader.load();
             
   
             // mostrar la ventana

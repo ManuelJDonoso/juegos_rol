@@ -10,14 +10,29 @@ package modelos.sub_modelos;
  * @author donpe
  */
 class N_Disciplina {
-    private String Disciplina, Nombre, Descripcion;
+    private String Disciplina, Nombre, Descripcion,senda;
     private int nivel;
 
     @Override
     public String toString() {
         return Nombre +" {" +Disciplina+" ( "+ nivel + " ) }";
     }
+
+    public String getSenda() {
+        return senda;
+    }
+
+    public void setSenda(String senda) {
+        this.senda = senda;
+    }
     
+       public N_Disciplina(String Disciplina,String senda, String Nombre, String Descripcion, int nivel) {
+        this.Disciplina = Disciplina;
+        this.Nombre = Nombre;
+        this.Descripcion = Descripcion;
+        this.nivel = nivel;
+        this.senda=senda;
+    }
 
     public N_Disciplina(String Disciplina, String Nombre, String Descripcion, int nivel) {
         this.Disciplina = Disciplina;

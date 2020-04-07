@@ -2489,9 +2489,9 @@ public class iniciales {
         return valor;
     }
 
-    public static ArrayList<Sendas>  Sendas_V20() {
+    public static ArrayList<Sendas> Sendas_V20() {
         ArrayList<Sendas> sendas = new ArrayList<>();
-    
+
         sendas.add(new Sendas("Acuerdo Honorable", "Caballeros", "Conciencia", "Autocontrol"));
         sendas.get(0).setPorte("");
         sendas.get(0).setCreencias("");
@@ -2501,7 +2501,7 @@ public class iniciales {
         sendas.get(0).setD_seguidores("");
         sendas.get(0).setSeguir_s("");
         sendas.get(0).setJerarquia(new Image("media/insignias/Gangrel.png"));
-        
+
         sendas.add(new Sendas("Armonia", "Bestias", "Convicción", "Instinto"));
         sendas.get(1).setPorte("");
         sendas.get(1).setCreencias("");
@@ -2511,7 +2511,7 @@ public class iniciales {
         sendas.get(1).setD_seguidores("");
         sendas.get(1).setSeguir_s("");
         sendas.get(1).setJerarquia(new Image("media/insignias/Gangrel.png"));
-        
+
         sendas.add(new Sendas("Caín", "Nodistas", "Convicción", "Instinto"));
         sendas.get(2).setPorte("");
         sendas.get(2).setCreencias("");
@@ -2521,7 +2521,7 @@ public class iniciales {
         sendas.get(2).setD_seguidores("");
         sendas.get(2).setSeguir_s("");
         sendas.get(2).setJerarquia(new Image("media/insignias/Gangrel.png"));
-        
+
         sendas.add(new Sendas("Cataros", "Albigenses", "Convicción", "Instinto"));
         sendas.get(3).setPorte("");
         sendas.get(3).setCreencias("");
@@ -2531,7 +2531,7 @@ public class iniciales {
         sendas.get(3).setD_seguidores("");
         sendas.get(3).setSeguir_s("");
         sendas.get(3).setJerarquia(new Image("media/insignias/Gangrel.png"));
-        
+
         sendas.add(new Sendas("Corazón Salvaje", "Bestias", "Convicción", "Instinto"));
         sendas.get(4).setPorte("");
         sendas.get(4).setCreencias("");
@@ -2541,7 +2541,7 @@ public class iniciales {
         sendas.get(4).setD_seguidores("");
         sendas.get(4).setSeguir_s("");
         sendas.get(4).setJerarquia(new Image("media/insignias/Gangrel.png"));
-        
+
         sendas.add(new Sendas("Huesos", "Sepultureros", "Convicción", "Autocontrol"));
         sendas.get(5).setPorte("");
         sendas.get(5).setCreencias("");
@@ -2551,7 +2551,7 @@ public class iniciales {
         sendas.get(5).setD_seguidores("");
         sendas.get(5).setSeguir_s("");
         sendas.get(5).setJerarquia(new Image("media/insignias/Gangrel.png"));
-        
+
         sendas.add(new Sendas("Lilith", "Bahari, Lilin", "Convicción", "Instinto"));
         sendas.get(6).setPorte("");
         sendas.get(6).setCreencias("");
@@ -2561,7 +2561,7 @@ public class iniciales {
         sendas.get(6).setD_seguidores("");
         sendas.get(6).setSeguir_s("");
         sendas.get(6).setJerarquia(new Image("media/insignias/Gangrel.png"));
-        
+
         sendas.add(new Sendas("Metamorfosis", "Metamorfosistas", "Convicción", "Instintos"));
         sendas.get(7).setPorte("");
         sendas.get(7).setCreencias("");
@@ -2571,7 +2571,7 @@ public class iniciales {
         sendas.get(7).setD_seguidores("");
         sendas.get(7).setSeguir_s("");
         sendas.get(7).setJerarquia(new Image("media/insignias/Gangrel.png"));
-        
+
         sendas.add(new Sendas("Muerte y el Alma", "", "Convicción", "Autocontrol"));
         sendas.get(8).setPorte("");
         sendas.get(8).setCreencias("");
@@ -2581,7 +2581,7 @@ public class iniciales {
         sendas.get(8).setD_seguidores("");
         sendas.get(8).setSeguir_s("");
         sendas.get(8).setJerarquia(new Image("media/insignias/Gangrel.png"));
-        
+
         sendas.add(new Sendas("Noche", "Nihilistas", "Convicción", "Instinto"));
         sendas.get(9).setPorte("");
         sendas.get(9).setCreencias("");
@@ -2591,7 +2591,7 @@ public class iniciales {
         sendas.get(9).setD_seguidores("");
         sendas.get(9).setSeguir_s("");
         sendas.get(9).setJerarquia(new Image("media/insignias/Gangrel.png"));
-        
+
         sendas.add(new Sendas("Paradoja", "Shilmulo", "Convicción", "Autocontrol"));
         sendas.get(10).setPorte("");
         sendas.get(10).setCreencias("");
@@ -2601,7 +2601,7 @@ public class iniciales {
         sendas.get(10).setD_seguidores("");
         sendas.get(10).setSeguir_s("");
         sendas.get(10).setJerarquia(new Image("media/insignias/Gangrel.png"));
-        
+
         sendas.add(new Sendas("Poder y la Voz Interior", "unificadores", "Convicción", "Instinto"));
         sendas.get(11).setPorte("");
         sendas.get(11).setCreencias("");
@@ -2611,7 +2611,7 @@ public class iniciales {
         sendas.get(11).setD_seguidores("");
         sendas.get(11).setSeguir_s("");
         sendas.get(11).setJerarquia(new Image("media/insignias/Gangrel.png"));
-        
+
         sendas.add(new Sendas("Sangre", "Derviches", "Convicción", "Autocontrol"));
         sendas.get(12).setPorte("");
         sendas.get(12).setCreencias("");
@@ -2621,7 +2621,7 @@ public class iniciales {
         sendas.get(12).setD_seguidores("");
         sendas.get(12).setSeguir_s("");
         sendas.get(12).setJerarquia(new Image("media/insignias/Gangrel.png"));
-        
+
         sendas.add(new Sendas("Tifón", "Teoficidios, Corruptores", "Convicción", "Autocontrol"));
         sendas.get(13).setPorte("");
         sendas.get(13).setCreencias("");
@@ -2631,7 +2631,7 @@ public class iniciales {
         sendas.get(13).setD_seguidores("");
         sendas.get(13).setSeguir_s("");
         sendas.get(13).setJerarquia(new Image("media/insignias/Gangrel.png"));
-        
+
         sendas.add(new Sendas("Humanidad", "", "", ""));
         sendas.get(14).setPorte("");
         sendas.get(14).setCreencias("");
@@ -2641,258 +2641,449 @@ public class iniciales {
         sendas.get(14).setD_seguidores("");
         sendas.get(14).setSeguir_s("");
         sendas.get(14).setJerarquia(new Image("media/insignias/Gangrel.png"));
-        return  sendas;
+        return sendas;
     }
-    
-    public static  ArrayList<Disciplina> Disciplinas_v20(){
-            ArrayList<Disciplina>disciplina=new ArrayList<>();
-            disciplina.add(new Disciplina("Animalismo"));
-            disciplina.add(new Disciplina("Auspex"));
-            disciplina.add(new Disciplina("Celeridad"));
-            disciplina.add(new Disciplina("Dementación"));
-            disciplina.add(new Disciplina("Dominación"));
-            disciplina.add(new Disciplina("Extinción"));
-            disciplina.add(new Disciplina("Fortaleza"));
-            disciplina.add(new Disciplina("Necromancia",true));
-            disciplina.add(new Disciplina("Obtenebración"));
-            disciplina.add(new Disciplina("Ofuscación"));
-            disciplina.add(new Disciplina("Potencia"));
-            disciplina.add(new Disciplina("Presencia"));
-            disciplina.add(new Disciplina("Protean"));
-            disciplina.add(new Disciplina("Quimerismo"));
-            disciplina.add(new Disciplina("Serpentis"));
-            disciplina.add(new Disciplina("Taumaturgia",true));
-            disciplina.add(new Disciplina("Vicisitud"));
-            return disciplina;
+
+    public static ArrayList<Disciplina> Disciplinas_v20() {
+        ArrayList<Disciplina> disciplina = new ArrayList<>();
+        disciplina.add(new Disciplina("Animalismo"));
+        disciplina.add(new Disciplina("Auspex"));
+        disciplina.add(new Disciplina("Celeridad"));
+        disciplina.add(new Disciplina("Dementación"));
+        disciplina.add(new Disciplina("Dominación"));
+        disciplina.add(new Disciplina("Extinción"));
+        disciplina.add(new Disciplina("Fortaleza"));
+        disciplina.add(new Disciplina("Necromancia", true));
+        disciplina.add(new Disciplina("Obtenebración"));
+        disciplina.add(new Disciplina("Ofuscación"));
+        disciplina.add(new Disciplina("Potencia"));
+        disciplina.add(new Disciplina("Presencia"));
+        disciplina.add(new Disciplina("Protean"));
+        disciplina.add(new Disciplina("Quimerismo"));
+        disciplina.add(new Disciplina("Serpentis"));
+        disciplina.add(new Disciplina("Taumaturgia", true));
+        disciplina.add(new Disciplina("Vicisitud"));
+        return disciplina;
     }
-    
- public static  ArrayList<N_Disciplina> n_disciplinas(){
-      ArrayList<N_Disciplina> Nivel_Disciplina=new ArrayList<>();
-      String d="";
-      
-     // Nivel_Disciplina.add(new N_Disciplina(Disciplina, Nombre, Descripcion, 0));
-      d="disciplina";
-              
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
-      
-      d="disciplina";
-              
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
-      
-      d="disciplina";
-              
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
-      
-      d="disciplina";
-              
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
-      
-      d="disciplina";
-              
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
-      
-      d="disciplina";
-              
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
-      
-      d="disciplina";
-              
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
-      
-      d="disciplina";
-              
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
-      
-      d="disciplina";
-              
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
-      
-      d="disciplina";
-              
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
-      
-      d="disciplina";
-              
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
-      
-      d="disciplina";
-              
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
-      
-      d="disciplina";
-              
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
-      
-      d="disciplina";
-              
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
-      
-      d="disciplina";
-              
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
-      
-      d="disciplina";
-              
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
-      
-      d="disciplina";
-              
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
-      Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
-      
-      return Nivel_Disciplina;
- }   
-    
+
+    public static ArrayList<N_Disciplina> n_disciplinas_V20() {
+        ArrayList<N_Disciplina> Nivel_Disciplina = new ArrayList<>();
+        String d;
+
+        // Nivel_Disciplina.add(new N_Disciplina(Disciplina, Nombre, Descripcion, 0));
+        d = "Animalismo";
+
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
+
+        d = "Auspex";
+
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
+
+        d = "Celeridad";
+
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
+
+        d = "Dementación";
+
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
+
+        d = "Dominación";
+
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
+
+        d = "Extinción";
+
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
+
+        d = "Fortaleza";
+
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
+
+        d = "Necromancia";
+
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
+
+        d = "Obtenebración";
+
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
+
+        d = "Ofuscación";
+
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
+
+        d = "Potencia";
+
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
+
+        d = "Presencia";
+
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
+
+        d = "Protean";
+
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
+
+        d = "Quimerismo";
+
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
+
+        d = "Serpentis";
+
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
+
+        d = "Taumaturgia";
+
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
+
+        d = "Vicisitud";
+
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 1));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 2));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 3));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 4));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 5));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 6));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 7));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 8));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 9));
+        Nivel_Disciplina.add(new N_Disciplina(d, "", "", 10));
+
+        return Nivel_Disciplina;
+    }
+
+    public static void D_Sendas_V20() {
+        ArrayList<DSendas> sendas = new ArrayList<>();
+
+        sendas.add(new DSendas("Contramagia"));
+        sendas.add(new DSendas("Conjuración"));
+        sendas.add(new DSendas("Control del Clima"));
+        sendas.add(new DSendas("Corrupción"));
+        sendas.add(new DSendas("Dominio Elemental"));
+        sendas.add(new DSendas("Encanto de las Llamas"));
+        sendas.add(new DSendas("Manos de Destrucción"));
+        sendas.add(new DSendas("Marte"));
+        sendas.add(new DSendas("Movimiento Menta"));
+        sendas.add(new DSendas("Poder de Neptuno"));
+        sendas.add(new DSendas("Sangre"));
+        sendas.add(new DSendas("Tecnomancia"));
+        sendas.add(new DSendas("Venganza del Padre"));
+        sendas.add(new DSendas("Verde"));
+
+        sendas.add(new DSendas("Cadáver dentro del Monstruo"));
+        sendas.add(new DSendas("Cenizas"));
+        sendas.add(new DSendas("Cenotafio"));
+        sendas.add(new DSendas("Cuatro Humores"));
+        sendas.add(new DSendas("Osario"));
+        sendas.add(new DSendas("Podredumbre de la Tumba"));
+        sendas.add(new DSendas("Sepulcro"));
+        sendas.add(new DSendas("Vítrea"));
+
+    }
+
+    public static void N_D_Sendas_V20() {
+        ArrayList<N_Disciplina> Sendas = new ArrayList<>();
+        String s, d;
+        d = "Taumaturgia";
+
+        s = "Contramagia";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Conjuración";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Control del Clima";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Corrupción";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Dominio Elemental";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Encanto de las Llamas";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Manos de Destrucción";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Marte";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Movimiento Menta";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Poder de Neptuno";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Sangre";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Tecnomancia";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Venganza del Padre";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Verde";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        d = "Necromancia";
+
+        s = "Cadáver dentro del Monstruo";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Cenizas";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Cenotafio";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Cuatro Humores";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Osario";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Podredumbre de la Tumba";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Sepulcro";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+
+        s = "Vítrea";
+        Sendas.add(new N_Disciplina(d, s, "", "", 1));
+        Sendas.add(new N_Disciplina(d, s, "", "", 2));
+        Sendas.add(new N_Disciplina(d, s, "", "", 3));
+        Sendas.add(new N_Disciplina(d, s, "", "", 4));
+        Sendas.add(new N_Disciplina(d, s, "", "", 5));
+    }
+
 }
