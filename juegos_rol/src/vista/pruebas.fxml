@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.PruebasController">
+   <children>
+      <ComboBox fx:id="combo" layoutX="51.0" layoutY="27.0" onAction="#cambio" prefWidth="150.0" />
+      <ImageView fx:id="img" fitHeight="65.0" fitWidth="75.0" layoutX="494.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="label1" layoutX="236.0" layoutY="31.0" text="Label" />
+      <Label fx:id="label2" layoutX="325.0" layoutY="31.0" text="Label" />
+      <ComboBox fx:id="comboM" layoutX="51.0" layoutY="67.0" onAction="#ComboM_A" prefWidth="150.0" />
+      <Label fx:id="label_M" layoutX="229.0" layoutY="71.0" text="Label" />
+      <TextArea fx:id="area_m" layoutX="284.0" layoutY="58.0" prefHeight="65.0" prefWidth="158.0" />
+      <ComboBox fx:id="atri" layoutX="51.0" layoutY="105.0" onAction="#atri_a" prefWidth="150.0" />
+      <ComboBox fx:id="Cvalores" layoutX="51.0" layoutY="148.0" onAction="#Cvalores_a" prefWidth="150.0" />
+      <Label fx:id="label_val" layoutX="229.0" layoutY="152.0" text="Label" />
+   </children>
+</AnchorPane>

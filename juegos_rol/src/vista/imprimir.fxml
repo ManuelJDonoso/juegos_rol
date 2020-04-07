@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ImprimirController4">
+   <children>
+      <ScrollPane layoutX="76.0" layoutY="48.0" prefHeight="747.0" prefWidth="505.0">
+        <content>
+          <AnchorPane fx:id="folio1" minHeight="0.0" minWidth="0.0" prefHeight="733.0" prefWidth="488.0" style="-fx-background-color: blue;">
+               <children>
+                  <ImageView fitHeight="53.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../media/insignias/Gangrel.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="53.0" fitWidth="54.0" layoutX="432.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../media/insignias/Gangrel.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="53.0" fitWidth="54.0" layoutY="682.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../media/insignias/Gangrel.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="53.0" fitWidth="54.0" layoutX="432.0" layoutY="682.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../media/insignias/Gangrel.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button fx:id="b_imp" layoutX="516.0" layoutY="23.0" mnemonicParsing="false" onAction="#imp" text="Button" />
+   </children>
+</AnchorPane>
