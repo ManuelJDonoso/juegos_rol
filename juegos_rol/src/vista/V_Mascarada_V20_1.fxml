@@ -22,7 +22,7 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="1000.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="1000.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.V_Mascarada_V20_1Controller">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -63,33 +63,33 @@
         </Menu>
       </menus>
     </MenuBar>
-    <SplitPane dividerPositions="0.12295081967213115, 0.8114754098360656" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <SplitPane dividerPositions="0.12295081967213115, 0.8460837887067395" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <items>
         <AnchorPane maxWidth="132.0">
           <children>
                   <VBox maxWidth="132.0">
                      <children>
-                        <Button mnemonicParsing="false" prefWidth="132.0" text="CONCEPTO" textOverrun="CENTER_ELLIPSIS">
+                        <Button mnemonicParsing="false" onAction="#bt_concepto" prefWidth="132.0" text="CONCEPTO" textOverrun="CENTER_ELLIPSIS">
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>
                         </Button>
-                        <Button mnemonicParsing="false" prefWidth="132.0" text="ATRIBUTOS">
+                        <Button mnemonicParsing="false" onAction="#bt_atributos" prefWidth="132.0" text="ATRIBUTOS">
                            <VBox.margin>
                               <Insets top="10.0" />
                            </VBox.margin>
                         </Button>
-                        <Button mnemonicParsing="false" prefWidth="132.0" text="HABILIDADES">
+                        <Button mnemonicParsing="false" onAction="#bt_habilidades" prefWidth="132.0" text="HABILIDADES">
                            <VBox.margin>
                               <Insets top="10.0" />
                            </VBox.margin>
                         </Button>
-                        <Button mnemonicParsing="false" prefWidth="132.0" text="VENTAJAS">
+                        <Button mnemonicParsing="false" onAction="#bt_ventajas" prefWidth="132.0" text="VENTAJAS">
                            <VBox.margin>
                               <Insets top="10.0" />
                            </VBox.margin>
                         </Button>
-                        <Button mnemonicParsing="false" prefWidth="132.0" text="TOQUES FINALES">
+                        <Button mnemonicParsing="false" onAction="#bt_toques_finales" prefWidth="132.0" text="TOQUES FINALES">
                            <VBox.margin>
                               <Insets top="10.0" />
                            </VBox.margin>
@@ -106,102 +106,1479 @@
             </Label>
           </children>
         </AnchorPane>
-        <ScrollPane prefHeight="951.0" prefWidth="731.0">
+        <ScrollPane maxWidth="788.0" minWidth="788.0" prefWidth="788.0">
                <content>
-                  <AnchorPane prefHeight="916.0" prefWidth="780.0">
+                  <AnchorPane>
                      <children>
-                        <AnchorPane layoutX="5.0" layoutY="14.0" prefHeight="50.0" prefWidth="249.0" style="-fx-background-color: red;">
+                        <VBox fx:id="atributos_pane" alignment="TOP_CENTER" layoutX="8.0" layoutY="-14.0" prefHeight="916.0" prefWidth="780.0" visible="false" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="-8.0" AnchorPane.topAnchor="-14.0">
                            <children>
-                              <TextField layoutX="88.0" layoutY="13.0" />
-                              <Label layoutX="12.0" layoutY="15.0" text="Nombre" />
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                              <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+                                <tabs>
+                                  <Tab text="Untitled Tab 1">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                    </content>
+                                  </Tab>
+                                  <Tab text="Fisicos">
+                                       <content>
+                                          <GridPane>
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label fx:id="atr_" alignment="CENTER" text="Label" GridPane.columnIndex="3">
+                                                   <GridPane.margin>
+                                                      <Insets right="10.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <Label fx:id="atr_1" alignment="CENTER" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets right="10.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <Label fx:id="atr_2" alignment="CENTER" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                                   <GridPane.margin>
+                                                      <Insets right="10.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.halignment="CENTER">
+                                                   <children>
+                                                      <CheckBox fx:id="atr_valor1_" mnemonicParsing="false" onAction="#atr_valor1_" />
+                                                      <CheckBox fx:id="atr_valor2_" mnemonicParsing="false" onAction="#atr_valor2_" />
+                                                      <CheckBox fx:id="atr_valor3_" mnemonicParsing="false" onAction="#atr_valor3_" />
+                                                      <CheckBox fx:id="atr_valor4_" mnemonicParsing="false" onAction="#atr_valor4_" />
+                                                      <CheckBox fx:id="atr_valor5_" mnemonicParsing="false" onAction="#atr_valor5_" />
+                                                      <CheckBox fx:id="atr_valor6_" mnemonicParsing="false" onAction="#atr_valor6_" />
+                                                      <CheckBox fx:id="atr_valor7_" mnemonicParsing="false" onAction="#atr_valor7_" />
+                                                      <CheckBox fx:id="atr_valor8_" mnemonicParsing="false" onAction="#atr_valor8_" />
+                                                      <CheckBox fx:id="atr_valor9_" mnemonicParsing="false" onAction="#atr_valor9_" />
+                                                      <CheckBox fx:id="atr_valor10_" mnemonicParsing="false" onAction="#atr_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <CheckBox fx:id="atr_valor1_1" mnemonicParsing="false" onAction="#atr_valor1_1" />
+                                                      <CheckBox fx:id="atr_valor2_1" mnemonicParsing="false" onAction="#atr_valor2_1" />
+                                                      <CheckBox fx:id="atr_valor3_1" mnemonicParsing="false" onAction="#atr_valor3_1" />
+                                                      <CheckBox fx:id="atr_valor4_1" mnemonicParsing="false" onAction="#atr_valor4_1" />
+                                                      <CheckBox fx:id="atr_valor5_1" mnemonicParsing="false" onAction="#atr_valor5_1" />
+                                                      <CheckBox fx:id="atr_valor6_1" mnemonicParsing="false" onAction="#atr_valor6_1" />
+                                                      <CheckBox fx:id="atr_valor7_1" mnemonicParsing="false" onAction="#atr_valor7_1" />
+                                                      <CheckBox fx:id="atr_valor8_1" mnemonicParsing="false" onAction="#atr_valor8_1" />
+                                                      <CheckBox fx:id="atr_valor9_1" mnemonicParsing="false" onAction="#atr_valor9_1" />
+                                                      <CheckBox fx:id="atr_valor10_1" mnemonicParsing="false" onAction="#atr_valor10_1" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <CheckBox fx:id="atr_valor1_2" mnemonicParsing="false" onAction="#atr_valor1_2" />
+                                                      <CheckBox fx:id="atr_valor2_2" mnemonicParsing="false" onAction="#atr_valor2_2" />
+                                                      <CheckBox fx:id="atr_valor3_2" mnemonicParsing="false" onAction="#atr_valor3_2" />
+                                                      <CheckBox fx:id="atr_valor4_2" mnemonicParsing="false" onAction="#atr_valor4_2" />
+                                                      <CheckBox fx:id="atr_valor5_2" mnemonicParsing="false" onAction="#atr_valor5_2" />
+                                                      <CheckBox fx:id="atr_valor6_2" mnemonicParsing="false" onAction="#atr_valor6_2" />
+                                                      <CheckBox fx:id="atr_valor7_2" mnemonicParsing="false" onAction="#atr_valor7_2" />
+                                                      <CheckBox fx:id="atr_valor8_2" mnemonicParsing="false" onAction="#atr_valor8_2" />
+                                                      <CheckBox fx:id="atr_valor9_2" mnemonicParsing="false" onAction="#atr_valor9_2" />
+                                                      <CheckBox fx:id="atr_valor10_2" mnemonicParsing="false" onAction="#atr_valor10_2" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <Button fx:id="atr_d_1" mnemonicParsing="false" onAction="#atr_d_1" text="?" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets right="20.0" />
+                                                   </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="atr_d_2" mnemonicParsing="false" onAction="#atr_d_2" text="?" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                                                   <GridPane.margin>
+                                                      <Insets right="20.0" />
+                                                   </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="atr_d_" mnemonicParsing="false" onAction="#atr_d_" text="?" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                                                   <GridPane.margin>
+                                                      <Insets right="20.0" />
+                                                   </GridPane.margin>
+                                                </Button>
+                                             </children>
+                                          </GridPane>
+                                       </content>
+                                  </Tab>
+                                    <Tab text="Sociales">
+                                       <content>
+                                          <GridPane>
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label fx:id="atr_3" alignment="CENTER" text="Label" GridPane.columnIndex="3">
+                                                   <GridPane.margin>
+                                                      <Insets right="10.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <Label fx:id="atr_4" alignment="CENTER" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets right="10.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <Label fx:id="atr_5" alignment="CENTER" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                                   <GridPane.margin>
+                                                      <Insets right="10.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.halignment="CENTER">
+                                                   <children>
+                                                      <CheckBox fx:id="atr_valor1_3" mnemonicParsing="false" onAction="#atr_valor1_3" />
+                                                      <CheckBox fx:id="atr_valor2_3" mnemonicParsing="false" onAction="#atr_valor2_3" />
+                                                      <CheckBox fx:id="atr_valor3_3" mnemonicParsing="false" onAction="#atr_valor3_3" />
+                                                      <CheckBox fx:id="atr_valor4_3" mnemonicParsing="false" onAction="#atr_valor4_3" />
+                                                      <CheckBox fx:id="atr_valor5_3" mnemonicParsing="false" onAction="#atr_valor5_3" />
+                                                      <CheckBox fx:id="atr_valor6_3" mnemonicParsing="false" onAction="#atr_valor6_3" />
+                                                      <CheckBox fx:id="atr_valor7_3" mnemonicParsing="false" onAction="#atr_valor7_3" />
+                                                      <CheckBox fx:id="atr_valor8_3" mnemonicParsing="false" onAction="#atr_valor8_3" />
+                                                      <CheckBox fx:id="atr_valor9_3" mnemonicParsing="false" onAction="#atr_valor9_3" />
+                                                      <CheckBox fx:id="atr_valor10_3" mnemonicParsing="false" onAction="#atr_valor10_3" />
+                                                   </children>
+                                                   <GridPane.margin>
+                                                      <Insets left="20.0" />
+                                                   </GridPane.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <CheckBox fx:id="atr_valor1_4" mnemonicParsing="false" onAction="#atr_valor1_4" />
+                                                      <CheckBox fx:id="atr_valor2_4" mnemonicParsing="false" onAction="#atr_valor2_4" />
+                                                      <CheckBox fx:id="atr_valor3_4" mnemonicParsing="false" onAction="#atr_valor3_4" />
+                                                      <CheckBox fx:id="atr_valor4_4" mnemonicParsing="false" onAction="#atr_valor4_4" />
+                                                      <CheckBox fx:id="atr_valor5_4" mnemonicParsing="false" onAction="#atr_valor5_4" />
+                                                      <CheckBox fx:id="atr_valor6_4" mnemonicParsing="false" onAction="#atr_valor6_4" />
+                                                      <CheckBox fx:id="atr_valor7_4" mnemonicParsing="false" onAction="#atr_valor7_4" />
+                                                      <CheckBox fx:id="atr_valor8_4" mnemonicParsing="false" onAction="#atr_valor8_4" />
+                                                      <CheckBox fx:id="atr_valor9_4" mnemonicParsing="false" onAction="#atr_valor9_4" />
+                                                      <CheckBox fx:id="atr_valor10_4" mnemonicParsing="false" onAction="#atr_valor10_4" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <CheckBox fx:id="atr_valor1_5" mnemonicParsing="false" onAction="#atr_valor1_5" />
+                                                      <CheckBox fx:id="atr_valor2_5" mnemonicParsing="false" onAction="#atr_valor2_5" />
+                                                      <CheckBox fx:id="atr_valor3_5" mnemonicParsing="false" onAction="#atr_valor3_5" />
+                                                      <CheckBox fx:id="atr_valor4_5" mnemonicParsing="false" onAction="#atr_valor4_5" />
+                                                      <CheckBox fx:id="atr_valor5_5" mnemonicParsing="false" onAction="#atr_valor5_5" />
+                                                      <CheckBox fx:id="atr_valor6_5" mnemonicParsing="false" onAction="#atr_valor6_5" />
+                                                      <CheckBox fx:id="atr_valor7_5" mnemonicParsing="false" onAction="#atr_valor7_5" />
+                                                      <CheckBox fx:id="atr_valor8_5" mnemonicParsing="false" onAction="#atr_valor8_5" />
+                                                      <CheckBox fx:id="atr_valor9_5" mnemonicParsing="false" onAction="#atr_valor9_5" />
+                                                      <CheckBox fx:id="atr_valor10_5" mnemonicParsing="false" onAction="#atr_valor10_5" />
+                                                   </children>
+                                                   <GridPane.margin>
+                                                      <Insets left="20.0" />
+                                                   </GridPane.margin>
+                                                </HBox>
+                                                <Button fx:id="atr_d_3" mnemonicParsing="false" onAction="#atr_d_3" text="?" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                                                   <GridPane.margin>
+                                                      <Insets right="20.0" />
+                                                   </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="atr_d_4" mnemonicParsing="false" onAction="#atr_d_4" text="?" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets right="20.0" />
+                                                   </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="atr_d_5" mnemonicParsing="false" onAction="#atr_d_5" text="?" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                                                   <GridPane.margin>
+                                                      <Insets right="20.0" />
+                                                   </GridPane.margin>
+                                                </Button>
+                                             </children>
+                                          </GridPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab text="Mentales">
+                                       <content>
+                                          <GridPane>
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label fx:id="atr_6" text="Label" GridPane.columnIndex="3">
+                                                   <GridPane.margin>
+                                                      <Insets right="10.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <Label fx:id="atr_7" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets right="10.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <Label fx:id="atr_8" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                                   <GridPane.margin>
+                                                      <Insets right="10.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.halignment="CENTER">
+                                                   <children>
+                                                      <CheckBox fx:id="atr_valor1_6" mnemonicParsing="false" onAction="#atr_valor1_6" />
+                                                      <CheckBox fx:id="atr_valor2_6" mnemonicParsing="false" onAction="#atr_valor2_6" />
+                                                      <CheckBox fx:id="atr_valor3_6" mnemonicParsing="false" onAction="#atr_valor3_6" />
+                                                      <CheckBox fx:id="atr_valor4_6" mnemonicParsing="false" onAction="#atr_valor4_6" />
+                                                      <CheckBox fx:id="atr_valor5_6" mnemonicParsing="false" onAction="#atr_valor5_6" />
+                                                      <CheckBox fx:id="atr_valor6_6" mnemonicParsing="false" onAction="#atr_valor6_6" />
+                                                      <CheckBox fx:id="atr_valor7_6" mnemonicParsing="false" onAction="#atr_valor7_6" />
+                                                      <CheckBox fx:id="atr_valor8_6" mnemonicParsing="false" onAction="#atr_valor8_6" />
+                                                      <CheckBox fx:id="atr_valor9_6" mnemonicParsing="false" onAction="#atr_valor9_6" />
+                                                      <CheckBox fx:id="atr_valor10_6" mnemonicParsing="false" onAction="#atr_valor10_6" />
+                                                   </children>
+                                                   <opaqueInsets>
+                                                      <Insets left="10.0" />
+                                                   </opaqueInsets>
+                                                   <GridPane.margin>
+                                                      <Insets left="10.0" />
+                                                   </GridPane.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <CheckBox fx:id="atr_valor1_7" mnemonicParsing="false" onAction="#atr_valor1_7" />
+                                                      <CheckBox fx:id="atr_valor2_7" mnemonicParsing="false" onAction="#atr_valor2_7" />
+                                                      <CheckBox fx:id="atr_valor3_7" mnemonicParsing="false" onAction="#atr_valor3_7" />
+                                                      <CheckBox fx:id="atr_valor4_7" mnemonicParsing="false" onAction="#atr_valor4_7" />
+                                                      <CheckBox fx:id="atr_valor5_7" mnemonicParsing="false" onAction="#atr_valor5_7" />
+                                                      <CheckBox fx:id="atr_valor6_7" mnemonicParsing="false" onAction="#atr_valor6_7" />
+                                                      <CheckBox fx:id="atr_valor7_7" mnemonicParsing="false" onAction="#atr_valor7_7" />
+                                                      <CheckBox fx:id="atr_valor8_7" mnemonicParsing="false" onAction="#atr_valor8_7" />
+                                                      <CheckBox fx:id="atr_valor9_7" mnemonicParsing="false" onAction="#atr_valor9_7" />
+                                                      <CheckBox fx:id="atr_valor10_7" mnemonicParsing="false" onAction="#atr_valor10_7" />
+                                                   </children>
+                                                   <GridPane.margin>
+                                                      <Insets left="10.0" />
+                                                   </GridPane.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <CheckBox fx:id="atr_valor1_8" mnemonicParsing="false" onAction="#atr_valor1_8" />
+                                                      <CheckBox fx:id="atr_valor2_8" mnemonicParsing="false" onAction="#atr_valor2_8" />
+                                                      <CheckBox fx:id="atr_valor3_8" mnemonicParsing="false" onAction="#atr_valor3_8" />
+                                                      <CheckBox fx:id="atr_valor4_8" mnemonicParsing="false" onAction="#atr_valor4_8" />
+                                                      <CheckBox fx:id="atr_valor5_8" mnemonicParsing="false" onAction="#atr_valor5_8" />
+                                                      <CheckBox fx:id="atr_valor6_8" mnemonicParsing="false" onAction="#atr_valor6_8" />
+                                                      <CheckBox fx:id="atr_valor7_8" mnemonicParsing="false" onAction="#atr_valor7_8" />
+                                                      <CheckBox fx:id="atr_valor8_8" mnemonicParsing="false" onAction="#atr_valor8_8" />
+                                                      <CheckBox fx:id="atr_valor9_8" mnemonicParsing="false" onAction="#atr_valor9_8" />
+                                                      <CheckBox fx:id="atr_valor10_8" mnemonicParsing="false" onAction="#atr_valor10_8" />
+                                                   </children>
+                                                   <GridPane.margin>
+                                                      <Insets left="10.0" />
+                                                   </GridPane.margin>
+                                                </HBox>
+                                                <Button fx:id="atr_d_6" mnemonicParsing="false" onAction="#atr_d_6" text="?" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                                                   <GridPane.margin>
+                                                      <Insets right="20.0" />
+                                                   </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="atr_d_7" mnemonicParsing="false" onAction="#atr_d_7" text="?" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets right="20.0" />
+                                                   </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="atr_d_8" mnemonicParsing="false" onAction="#atr_d_8" text="?" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                                                   <GridPane.margin>
+                                                      <Insets right="20.0" />
+                                                   </GridPane.margin>
+                                                </Button>
+                                             </children>
+                                          </GridPane>
+                                       </content>
+                                    </Tab>
+                                </tabs>
+                              </TabPane>
+                              <TextArea fx:id="atr_area" editable="false" prefHeight="462.0" prefWidth="780.0" wrapText="true" />
+                           </children>
+                        </VBox>
+                        <AnchorPane fx:id="concepto_pane" prefHeight="916.0" prefWidth="780.0" visible="false">
+                           <children>
+                              <AnchorPane layoutX="5.0" layoutY="14.0" prefHeight="50.0" prefWidth="249.0">
+                                 <children>
+                                    <TextField fx:id="t_nombre" layoutX="88.0" layoutY="13.0" />
+                                    <Label layoutX="12.0" layoutY="15.0" text="Nombre" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="6.0" layoutY="70.0" prefHeight="50.0" prefWidth="249.0">
+                                 <children>
+                                    <Label layoutX="12.0" layoutY="16.0" text="Jugador" />
+                                    <TextField fx:id="T_jugador" layoutX="88.0" layoutY="12.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="5.0" layoutY="128.0" prefHeight="50.0" prefWidth="249.0">
+                                 <children>
+                                    <Label layoutX="17.0" layoutY="16.0" text="Cronica" />
+                                    <TextField fx:id="T_cronica" layoutX="89.0" layoutY="12.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="269.0" layoutY="14.0" prefHeight="50.0" prefWidth="249.0">
+                                 <children>
+                                    <Label layoutX="11.0" layoutY="16.0" text="Naturaleza" />
+                                    <ComboBox fx:id="CB_Naturaleza" layoutX="87.0" layoutY="12.0" onAction="#CB_Naturaleza" prefHeight="25.0" prefWidth="166.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="269.0" layoutY="70.0" prefHeight="50.0" prefWidth="249.0">
+                                 <children>
+                                    <Label layoutX="11.0" layoutY="17.0" text="Conducta" />
+                                    <ComboBox fx:id="CB_Conducta" layoutX="89.0" layoutY="13.0" onAction="#CB_Conducta" prefHeight="25.0" prefWidth="166.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="269.0" layoutY="128.0" prefHeight="50.0" prefWidth="250.0">
+                                 <children>
+                                    <Label layoutX="11.0" layoutY="17.0" text="Concepto" />
+                                    <TextField fx:id="T_concepto" layoutX="87.0" layoutY="13.0" prefHeight="25.0" prefWidth="166.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="531.0" layoutY="14.0" prefHeight="50.0" prefWidth="250.0">
+                                 <children>
+                                    <Label layoutX="11.0" layoutY="17.0" text="Clan" />
+                                    <ComboBox fx:id="CB_Clan" layoutX="84.0" layoutY="13.0" onAction="#CB_Clan" prefWidth="150.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="531.0" layoutY="70.0" prefHeight="50.0" prefWidth="251.0">
+                                 <children>
+                                    <Label layoutX="9.0" layoutY="19.0" text="Generación" />
+                                    <ComboBox fx:id="CB_generacion" layoutX="82.0" layoutY="13.0" onAction="#CB_Generacion" prefWidth="150.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="531.0" layoutY="128.0" prefHeight="50.0" prefWidth="250.0">
+                                 <children>
+                                    <Label layoutX="9.0" layoutY="19.0" text="Sire" />
+                                    <TextField fx:id="T_sire" layoutX="85.0" layoutY="14.0" />
+                                 </children>
+                              </AnchorPane>
+                              <TabPane layoutX="16.0" layoutY="399.0" prefHeight="498.0" prefWidth="750.0" tabClosingPolicy="UNAVAILABLE">
+                                <tabs>
+                                    <Tab text="Insignia ">
+                                       <content>
+                                          <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <Label fx:id="clan">
+                                                   <font>
+                                                      <Font size="67.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fx:id="insignia" fitHeight="376.0" fitWidth="604.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../media/insignias/Caitiff.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                    </Tab>
+                                  <Tab text="Apodo Disciplinas Debilidad">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="250.0">
+                                             <children>
+                                                <Label layoutX="29.0" layoutY="30.0" text="Apodo:">
+                                                   <font>
+                                                      <Font size="22.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="apodo" layoutX="107.0" layoutY="30.0" text="apodo">
+                                                   <font>
+                                                      <Font size="22.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="319.0" layoutY="153.0" text="Debilidad">
+                                                   <font>
+                                                      <Font size="22.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextArea fx:id="debilidad" editable="false" layoutX="11.0" layoutY="194.0" prefHeight="233.0" prefWidth="730.0" wrapText="true" />
+                                                <Label layoutX="29.0" layoutY="80.0" text="Disciplinas:">
+                                                   <font>
+                                                      <Font size="22.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="disciplinas" layoutX="148.0" layoutY="80.0" text="disciplinas">
+                                                   <font>
+                                                      <Font size="22.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                  <Tab text="Secta Apariencia Refugio">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="281.0" layoutY="14.0" text="Secta:">
+                                                   <font>
+                                                      <Font size="22.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="secta" layoutX="349.0" layoutY="14.0" text="Label">
+                                                   <font>
+                                                      <Font size="22.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextArea fx:id="des_secta" editable="false" layoutX="14.0" layoutY="44.0" prefHeight="133.0" prefWidth="732.0" wrapText="true" />
+                                                <Label layoutX="302.0" layoutY="188.0" text="Apariencia">
+                                                   <font>
+                                                      <Font size="22.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextArea fx:id="apariencia" editable="false" layoutX="8.0" layoutY="220.0" prefHeight="116.0" prefWidth="740.0" wrapText="true" />
+                                                <Label layoutX="338.0" layoutY="336.0" text="Refugio">
+                                                   <font>
+                                                      <Font size="22.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextArea fx:id="refugio" editable="false" layoutX="7.0" layoutY="372.0" prefHeight="109.0" prefWidth="737.0" wrapText="true" />
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                    <Tab text="Creacion Trasfondo">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="497.0" prefWidth="750.0">
+                                             <children>
+                                                <Label layoutX="337.0" layoutY="14.0" text="Creación">
+                                                   <font>
+                                                      <Font size="22.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextArea fx:id="creacion" editable="false" layoutX="14.0" layoutY="43.0" prefHeight="173.0" prefWidth="730.0" wrapText="true" />
+                                                <Label layoutX="322.0" layoutY="220.0" text="Transfondo:">
+                                                   <font>
+                                                      <Font size="22.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextArea fx:id="trasfondo" editable="false" layoutX="13.0" layoutY="258.0" prefHeight="213.0" prefWidth="733.0" wrapText="true" />
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                    <Tab closable="false" text="Descripción">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="317.0" layoutY="14.0" text="Descripción:">
+                                                   <font>
+                                                      <Font size="22.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextArea fx:id="descripcion" editable="false" layoutX="15.0" layoutY="64.0" prefHeight="422.0" prefWidth="721.0" wrapText="true" />
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                    <Tab text=" Organizacion">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="291.0" layoutY="22.0" text="Organizacion">
+                                                   <font>
+                                                      <Font size="22.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextArea fx:id="organizacion" editable="false" layoutX="8.0" layoutY="81.0" prefHeight="401.0" prefWidth="735.0" wrapText="true" />
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                </tabs>
+                              </TabPane>
+                              <TabPane layoutX="15.0" layoutY="178.0" prefHeight="208.0" prefWidth="752.0" tabClosingPolicy="UNAVAILABLE">
+                                <tabs>
+                                    <Tab text="INICIO">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="752.0">
+                                             <children>
+                                                <Label layoutX="9.0" layoutY="47.0" text="NATURALEZA Y CONDUCTA">
+                                                   <font>
+                                                      <Font size="59.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                  <Tab text="Naturaleza">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <TextArea fx:id="Naturaleza" layoutX="3.0" layoutY="5.0" prefHeight="176.0" prefWidth="745.0" wrapText="true" />
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                  <Tab text="Conducta">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <TextArea fx:id="Conducta" editable="false" layoutX="4.0" layoutY="4.0" prefHeight="173.0" prefWidth="744.0" wrapText="true" />
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                </tabs>
+                              </TabPane>
                            </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="4.0" layoutY="128.0" prefHeight="50.0" prefWidth="249.0" style="-fx-background-color: green;">
+                        <VBox fx:id="Habilidades_pane" layoutX="128.0" layoutY="141.0" prefHeight="916.0" prefWidth="780.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <Label layoutX="12.0" layoutY="16.0" text="Jugador" />
-                              <TextField layoutX="88.0" layoutY="12.0" />
+                              <TabPane prefHeight="638.0" prefWidth="780.0" tabClosingPolicy="UNAVAILABLE">
+                                <tabs>
+                                  <Tab text="Untitled Tab 1">
+                                       <content>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                                       </content>
+                                  </Tab>
+                                  <Tab text="Talentos">
+                                       <content>
+                                          <GridPane>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Button fx:id="hab_d_" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="1" />
+                                                <Label fx:id="hab_1" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_1" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_1" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_1" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_1" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_1" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_1" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_1" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_1" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_1" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_1" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_2" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_2" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_2" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_2" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_2" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_2" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_2" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_2" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_2" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_2" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_3" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_3" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_3" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_3" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_3" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_3" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_3" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_3" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_3" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_3" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_4" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_4" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_4" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_4" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_4" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_4" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_4" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_4" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_4" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_4" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_5" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_5" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_5" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_5" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_5" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_5" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_5" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_5" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_5" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_5" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_6" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_6" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_6" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_6" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_6" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_6" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_6" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_6" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_6" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_6" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_7" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_7" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_7" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_7" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_7" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_7" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_7" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_7" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_7" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_7" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_8" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_8" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_8" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_8" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_8" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_8" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_8" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_8" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_8" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_8" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_9" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_9" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_9" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_9" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_9" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_9" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_9" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_9" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_9" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_9" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <Label fx:id="hab_11" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <Label fx:id="hab_12" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <Label fx:id="hab_13" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <Label fx:id="hab_14" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                <Label fx:id="hab_15" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                                <Label fx:id="hab_16" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                                <Label fx:id="hab_17" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                                <Label fx:id="hab_18" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                                <Label fx:id="hab_19" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                                <Button fx:id="hab_d_1" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="2" />
+                                                <Button fx:id="hab_d_2" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="3" />
+                                                <Button fx:id="hab_d_3" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="4" />
+                                                <Button fx:id="hab_d_4" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="5" />
+                                                <Button fx:id="hab_d_5" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="6" />
+                                                <Button fx:id="hab_d_6" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="7" />
+                                                <Button fx:id="hab_d_7" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="8" />
+                                                <Button fx:id="hab_d_8" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="9" />
+                                                <Button fx:id="hab_d_9" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="10" />
+                                             </children>
+                                          </GridPane>
+                                       </content>
+                                  </Tab>
+                                    <Tab text="Tecnicas">
+                                       <content>
+                                          <GridPane>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_10" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_10" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_10" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_10" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_10" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_10" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_10" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_10" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_10" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_10" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_11" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_11" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_11" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_11" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_11" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_11" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_11" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_11" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_11" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_11" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_12" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_12" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_12" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_12" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_12" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_12" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_12" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_12" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_12" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_12" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_13" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_13" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_13" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_13" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_13" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_13" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_13" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_13" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_13" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_13" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_14" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_14" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_14" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_14" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_14" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_14" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_14" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_14" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_14" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_14" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_15" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_15" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_15" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_15" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_15" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_15" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_15" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_15" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_15" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_15" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_16" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_16" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_16" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_16" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_16" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_16" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_16" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_16" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_16" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_16" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_17" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_17" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_17" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_17" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_17" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_17" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_17" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_17" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_17" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_17" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_18" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_18" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_18" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_18" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_18" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_18" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_18" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_18" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_18" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_18" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_19" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_19" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_19" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_19" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_19" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_19" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_19" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_19" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_19" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_19" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <Label fx:id="hab_110" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <Label fx:id="hab_111" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <Label fx:id="hab_112" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <Label fx:id="hab_113" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <Label fx:id="hab_114" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                <Label fx:id="hab_115" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                                <Label fx:id="hab_116" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                                <Label fx:id="hab_117" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                                <Label fx:id="hab_118" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                                <Label fx:id="hab_119" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                                <Button fx:id="hab_d_10" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="1" />
+                                                <Button fx:id="hab_d_11" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="2" />
+                                                <Button fx:id="hab_d_12" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="3" />
+                                                <Button fx:id="hab_d_13" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="4" />
+                                                <Button fx:id="hab_d_14" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="5" />
+                                                <Button fx:id="hab_d_15" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="6" />
+                                                <Button fx:id="hab_d_16" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="7" />
+                                                <Button fx:id="hab_d_17" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="8" />
+                                                <Button fx:id="hab_d_18" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="9" />
+                                                <Button fx:id="hab_d_19" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="10" />
+                                             </children>
+                                          </GridPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab text="Conocimientos">
+                                       <content>
+                                          <GridPane>
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_20" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_20" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_20" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_20" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_20" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_20" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_20" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_20" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_20" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_20" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_21" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_21" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_21" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_21" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_21" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_21" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_21" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_21" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_21" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_21" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_22" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_22" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_22" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_22" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_22" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_22" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_22" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_22" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_22" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_22" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_23" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_23" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_23" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_23" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_23" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_23" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_23" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_23" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_23" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_23" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_24" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_24" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_24" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_24" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_24" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_24" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_24" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_24" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_24" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_24" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_25" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_25" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_25" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_25" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_25" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_25" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_25" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_25" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_25" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_25" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_26" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_26" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_26" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_26" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_26" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_26" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_26" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_26" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_26" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_26" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_27" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_27" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_27" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_27" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_27" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_27" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_27" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_27" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_27" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_27" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_28" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_28" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_28" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_28" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_28" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_28" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_28" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_28" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_28" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_28" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                                                   <children>
+                                                      <CheckBox fx:id="hab_valor1_29" mnemonicParsing="false" onAction="#hab_valor1_" />
+                                                      <CheckBox fx:id="hab_valor2_29" mnemonicParsing="false" onAction="#hab_valor2_" />
+                                                      <CheckBox fx:id="hab_valor3_29" mnemonicParsing="false" onAction="#hab_valor3_" />
+                                                      <CheckBox fx:id="hab_valor4_29" mnemonicParsing="false" onAction="#hab_valor4_" />
+                                                      <CheckBox fx:id="hab_valor5_29" mnemonicParsing="false" onAction="#hab_valor5_" />
+                                                      <CheckBox fx:id="hab_valor6_29" mnemonicParsing="false" onAction="#hab_valor6_" />
+                                                      <CheckBox fx:id="hab_valor7_29" mnemonicParsing="false" onAction="#hab_valor7_" />
+                                                      <CheckBox fx:id="hab_valor8_29" mnemonicParsing="false" onAction="#hab_valor8_" />
+                                                      <CheckBox fx:id="hab_valor9_29" mnemonicParsing="false" onAction="#hab_valor9_" />
+                                                      <CheckBox fx:id="hab_valor10_29" mnemonicParsing="false" onAction="#hab_valor10_" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <Label fx:id="hab_120" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <Label fx:id="hab_121" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <Label fx:id="hab_122" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <Label fx:id="hab_123" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <Label fx:id="hab_124" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                <Label fx:id="hab_125" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                                <Label fx:id="hab_126" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                                <Label fx:id="hab_127" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                                <Label fx:id="hab_128" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                                <Label fx:id="hab_129" alignment="CENTER" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                                <Button fx:id="hab_d_20" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="1" />
+                                                <Button fx:id="hab_d_21" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="2" />
+                                                <Button fx:id="hab_d_22" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="3" />
+                                                <Button fx:id="hab_d_23" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="4" />
+                                                <Button fx:id="hab_d_24" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="5" />
+                                                <Button fx:id="hab_d_25" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="6" />
+                                                <Button fx:id="hab_d_26" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="7" />
+                                                <Button fx:id="hab_d_27" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="8" />
+                                                <Button fx:id="hab_d_28" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="9" />
+                                                <Button fx:id="hab_d_29" mnemonicParsing="false" onAction="#hab_d_" text="?" GridPane.rowIndex="10" />
+                                             </children>
+                                          </GridPane>
+                                       </content>
+                                    </Tab>
+                                </tabs>
+                              </TabPane>
+                              <TextArea fx:id="atr_area1" editable="false" prefHeight="497.0" prefWidth="780.0" wrapText="true" />
                            </children>
-                        </AnchorPane>
-                        <AnchorPane layoutX="4.0" layoutY="70.0" prefHeight="50.0" prefWidth="249.0" style="-fx-background-color: blue;">
-                           <children>
-                              <Label layoutX="17.0" layoutY="16.0" text="Cronica" />
-                              <TextField layoutX="89.0" layoutY="12.0" />
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane layoutX="269.0" layoutY="14.0" prefHeight="50.0" prefWidth="249.0" style="-fx-background-color: red;">
-                           <children>
-                              <Label layoutX="11.0" layoutY="16.0" text="Naturaleza" />
-                              <ComboBox layoutX="87.0" layoutY="12.0" prefWidth="150.0" />
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane layoutX="269.0" layoutY="70.0" prefHeight="50.0" prefWidth="249.0" style="-fx-background-color: blue;">
-                           <children>
-                              <Label layoutX="11.0" layoutY="17.0" text="Conducta" />
-                              <ComboBox layoutX="81.0" layoutY="13.0" prefWidth="150.0" />
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane layoutX="269.0" layoutY="128.0" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: green;">
-                           <children>
-                              <Label layoutX="11.0" layoutY="17.0" text="Concepto" />
-                              <TextField layoutX="82.0" layoutY="13.0" />
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane layoutX="531.0" layoutY="14.0" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: red;">
-                           <children>
-                              <Label layoutX="11.0" layoutY="17.0" text="Clan" />
-                              <ComboBox layoutX="84.0" layoutY="13.0" prefWidth="150.0" />
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane layoutX="531.0" layoutY="70.0" prefHeight="50.0" prefWidth="251.0" style="-fx-background-color: blue;">
-                           <children>
-                              <Label layoutX="9.0" layoutY="19.0" text="Generacion" />
-                              <ComboBox layoutX="82.0" layoutY="13.0" prefWidth="150.0" />
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane layoutX="531.0" layoutY="128.0" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: green;">
-                           <children>
-                              <Label layoutX="9.0" layoutY="19.0" text="Sire" />
-                              <TextField layoutX="85.0" layoutY="14.0" />
-                           </children>
-                        </AnchorPane>
-                        <ImageView fitHeight="69.0" fitWidth="68.0" layoutX="14.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../media/insignias/Caitiff.png" />
-                           </image>
-                        </ImageView>
-                        <TextArea layoutX="68.0" layoutY="185.0" prefHeight="57.0" prefWidth="674.0" />
-                        <TextArea layoutX="66.0" layoutY="262.0" prefHeight="60.0" prefWidth="675.0" />
-                        <Label layoutX="14.0" layoutY="205.0" text="Label" />
-                        <Label layoutX="14.0" layoutY="275.0" text="Label" />
-                        <Label layoutX="34.0" layoutY="419.0" text="clan" />
-                        <Label layoutX="96.0" layoutY="344.0" text="Apodo:" />
-                        <Label layoutX="143.0" layoutY="344.0" text="Label" />
-                        <Label layoutX="85.0" layoutY="443.0" text="Descripción:" />
-                        <Label layoutX="84.0" layoutY="485.0" text="Secta:" />
-                        <Label layoutX="123.0" layoutY="485.0" text="Label" />
-                        <Label layoutX="87.0" layoutY="546.0" text="Apariencia" />
-                        <Label layoutX="87.0" layoutY="620.0" text="Refugio" />
-                        <Label layoutX="84.0" layoutY="784.0" text="Transfondo:" />
-                        <Label layoutX="83.0" layoutY="701.0" text="Creación" />
-                        <Label layoutX="292.0" layoutY="344.0" text="Debilidad" />
-                        <Label layoutX="88.0" layoutY="852.0" text="Organizacion" />
-                        <Label layoutX="87.0" layoutY="395.0" text="Disciplinas" />
-                        <TextArea layoutX="169.0" layoutY="434.0" prefHeight="33.0" prefWidth="570.0" />
-                        <TextArea layoutX="169.0" layoutY="476.0" prefHeight="37.0" prefWidth="570.0" />
-                        <TextArea layoutX="169.0" layoutY="526.0" prefHeight="60.0" prefWidth="569.0" />
-                        <TextArea layoutX="169.0" layoutY="602.0" prefHeight="67.0" prefWidth="568.0" />
-                        <TextArea layoutX="353.0" layoutY="329.0" prefHeight="59.0" prefWidth="386.0" />
-                        <TextArea layoutX="169.0" layoutY="681.0" prefHeight="70.0" prefWidth="567.0" />
-                        <Label layoutX="171.0" layoutY="395.0" text="Label" />
-                        <TextArea layoutX="169.0" layoutY="766.0" prefHeight="61.0" prefWidth="565.0" />
-                        <TextArea layoutX="171.0" layoutY="838.0" prefHeight="51.0" prefWidth="565.0" />
+                        </VBox>
                      </children>
                   </AnchorPane>
                </content>
         </ScrollPane>
         <AnchorPane>
           <children>
-            <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="Details" textAlignment="CENTER" textFill="$x2" wrapText="false" />
+                  <VBox alignment="TOP_CENTER" layoutY="1.0" prefHeight="951.0" prefWidth="166.0" style="-fx-text-alignment: justify;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+                     <children>
+                  <Label alignment="CENTER" font="$x1" style="&#10;" text="Details" textAlignment="CENTER" textFill="$x2" wrapText="false" />
+                        <GridPane>
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Nombre:" GridPane.halignment="RIGHT">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label fx:id="RNombre" text="Label" GridPane.columnIndex="1" />
+                              <Label text="Naturaleza:" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label fx:id="RNaturaleza" GridPane.columnIndex="3" />
+                           </children>
+                        </GridPane>
+                        <GridPane>
+                           <children>
+                              <Label text="Conducta:" GridPane.halignment="RIGHT">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label fx:id="RConducta" GridPane.columnIndex="1" />
+                              <Label text="Concepto:" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label fx:id="RConcepto" text="Label" GridPane.columnIndex="3" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane>
+                           <children>
+                              <Label text="Clan:" GridPane.halignment="RIGHT">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label fx:id="Rclan" GridPane.columnIndex="1" />
+                              <Label text="Generación:" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label fx:id="RGeneracion" GridPane.columnIndex="3" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane>
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label fx:id="R_atr_" text="Label" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="R_atr_1" text="Label" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="R_atr_2" text="Label" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="R_atr_3" text="Label" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="R_atr_4" text="Label" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="R_atr_5" text="Label" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="RV_atr_" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="RV_atr_1" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="RV_atr_2" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="RV_atr_3" text="Label" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="RV_atr_4" text="Label" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="RV_atr_5" text="Label" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="R_atr_6" text="Label" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="R_atr_7" text="Label" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="R_atr_8" text="Label" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="RV_atr_6" text="Label" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="RV_atr_7" text="Label" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="RV_atr_8" text="Label" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin></Label>
+                              <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnSpan="2">
+                                 <children>
+                                    <Label text="Fisicos" />
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.columnSpan="2">
+                                 <children>
+                                    <Label text="Sociales" />
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="4" GridPane.columnSpan="2">
+                                 <children>
+                                    <Label text="Mentales" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </GridPane>
+                        <GridPane>
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Tecnicas" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" />
+                              <Label text="Conocimientos" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" />
+                              <Label text="Talentos" GridPane.columnSpan="2" GridPane.halignment="CENTER" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
           </children>
         </AnchorPane>
       </items>
